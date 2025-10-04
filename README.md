@@ -1,21 +1,17 @@
-# daily-bliss-planners
-Daily Bliss Planners is an online store website for selling customizable digital planners in PDF format.   These planners are designed to help users stay organized, motivated, and productive with multiple templates and color options.
 # Daily Bliss Planners
 
-Daily Bliss Planners is an online store website for selling customizable digital planners in PDF format.  
-These planners are designed to help users stay organized, motivated, and productive with multiple templates and color options.
+This is the final ready-to-sell version of the Daily Bliss Planners website. It includes a visible Buy Now button and improved layout.
 
 ## Features
-- Simple, clean, and responsive website design
-- “Buy Now” button linked to a digital product delivery platform (e.g., Gumroad or Payhip)
-- Easy to customize with your own branding and planner PDFs
-- Perfect for students, freelancers, and productivity enthusiasts
-
-## Tech Stack
-- HTML, CSS, JavaScript
-- Optional: GitHub Pages, Netlify, or Vercel for hosting
+- Fully functional Buy Now button linking to sample PDF
+- Product image, Features, and About sections
+- Clean and responsive design
+- Ready for GitHub Pages deployment
 
 ## Usage
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/daily-bliss-planners.git
+1. Replace `sample_planner.pdf` with your actual product or Gumroad/Payhip link.
+2. Update `images/planner-mockup.png` with your real product image.
+3. Push all files to GitHub and view your site via GitHub Pages.
+
+## License
+MIT License
