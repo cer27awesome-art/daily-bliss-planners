@@ -14,46 +14,161 @@ This is the final ready-to-sell version of the Daily Bliss Planners website. It 
 3. Push all files to GitHub and view your site via GitHub Pages.
 
 ## License
-MIT License
-[Uploading images…]()<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Bliss Planners</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #fdf6f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #f8b400;
+            padding: 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .product {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .product img {
+            width: 100%;
+            display: block;
+        }
+
+        .product-content {
+            padding: 1.5rem;
+        }
+
+        .product-content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            color: #f8b400;
+        }
+
+        .product-content p {
+            margin-bottom: 1rem;
+        }
+
+        .btn-buy {
+            display: inline-block;
+            padding: 0.7rem 1.5rem;
+            background: #f85a3e;
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-buy:hover {
+            background: #ff7b5c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #333;
+            color: white;
+        }
+
+        @media (min-width: 768px) {
+            .product-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .product-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Daily Bliss Planners</h1>
-        <p>Your perfect daily planning companion</p>
+        <p>Organize your day, your way 🌸</p>
     </header>
 
-    <main class="container">
-        <section class="product-section">
-            <img src="images/planner-mockup.png" alt="Planner Mockup" class="product-image">
-            <h2>Customizable Daily Planner PDF</h2>
-            <p>Boost your productivity with our beautifully designed planners. Choose from multiple templates and colors!</p>
-            <a href="sample_planner.pdf" target="_blank"><button>Buy Now - $9</button></a>
-        </section>
+    <div class="container">
+        <div class="product-grid">
+            <div class="product">
+                <img src="planner1.jpg" alt="Planner 1">
+                <div class="product-content">
+                    <h2>Floral Daily Planner</h2>
+                    <p>Keep your schedule bright and organized with this beautiful floral planner.</p>
+                    <a href="BUY_LINK_HERE" class="btn-buy">Buy Now</a>
+                </div>
+            </div>
 
-        <section class="features-section">
-            <h3>Features</h3>
-            <ul>
-                <li>Multiple templates & colors</li>
-                <li>Printable & digital</li>
-                <li>Motivational quotes included</li>
-            </ul>
-        </section>
+            <div class="product">
+                <img src="planner2.jpg" alt="Planner 2">
+                <div class="product-content">
+                    <h2>Minimalist Weekly Planner</h2>
+                    <p>Focus on what matters with this clean, simple weekly layout.</p>
+                    <a href="BUY_LINK_HERE" class="btn-buy">Buy Now</a>
+                </div>
+            </div>
 
-        <section class="about-section">
-            <h3>About</h3>
-            <p>Daily Bliss Planners are designed to help students, freelancers, and anyone looking to stay organized and motivated.</p>
-        </section>
-    </main>
+            <div class="product">
+                <img src="planner3.jpg" alt="Planner 3">
+                <div class="product-content">
+                    <h2>Colorful Goal Planner</h2>
+                    <p>Set your goals and track your progress in a fun, colorful way!</p>
+                    <a href="BUY_LINK_HERE" class="btn-buy">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
-        &copy; 2025 Daily Bliss Planners
+        &copy; 2025 Daily Bliss Planners. All rights reserved.
     </footer>
 </body>
 </html>
