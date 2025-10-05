@@ -1,105 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Bliss Planners</title>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom, #f0e5ff, #dcd0ff);
-            font-family: 'Roboto', sans-serif;
-            color: #4B0082;
-            text-align: center;
-        }
-
-        header {
-            background: rgba(155, 89, 182, 0.9);
-            padding: 30px 0;
-            color: white;
-            font-family: 'Great Vibes', cursive;
-            font-size: 3em;
-            letter-spacing: 2px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-
-        .cover-image {
-            width: 100%;
-            max-height: 400px;
-            object-fit: cover;
-            margin-bottom: 40px;
-            border-bottom: 5px solid #9B59B6;
-        }
-
-        .planner-section {
-            max-width: 700px;
-            margin: 0 auto 50px auto;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        }
-
-        .planner-section h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .planner-section p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        .buy-button {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 15px 30px;
-            background-color: #9B59B6;
-            color: white;
-            text-decoration: none;
-            border-radius: 12px;
-            font-weight: bold;
-            font-size: 1.2em;
-            transition: all 0.3s ease;
-        }
-
-        .buy-button:hover {
-            background-color: #8E44AD;
-            transform: scale(1.05);
-        }
-
-        footer {
-            margin-top: 50px;
-            padding: 20px 0;
-            font-size: 0.9em;
-            color: #4B0082;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Bliss Planners</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background: #f5f0ff;
+        color: #333;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background: #d9cfff;
+        padding: 2rem 1rem;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+    header p {
+        margin: 0.5rem 0 0 0;
+        font-size: 1.2rem;
+    }
+    .planner-section {
+        padding: 2rem 1rem;
+    }
+    .planner-cover {
+        max-width: 300px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        margin: 1rem auto;
+    }
+    .planner-preview {
+        max-width: 600px;
+        border: 2px dashed #aaa;
+        border-radius: 12px;
+        margin: 1rem auto;
+        padding: 1rem;
+        background: #fff;
+        position: relative;
+    }
+    .planner-preview::after {
+        content: "PREVIEW";
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-30deg);
+        font-size: 3rem;
+        color: rgba(200, 200, 200, 0.5);
+        pointer-events: none;
+    }
+    .buy-now {
+        margin: 2rem 0;
+    }
+    .buy-now a {
+        text-decoration: none;
+        background: #b499ff;
+        color: #fff;
+        padding: 1rem 2rem;
+        border-radius: 12px;
+        font-size: 1.2rem;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+</style>
 </head>
 <body>
 
 <header>
-    Daily Bliss Planners
+    <h1>✨ Daily Bliss Weekly Planner ✨</h1>
+    <p>Your minimal magical planner for a blissful week!</p>
 </header>
 
-<!-- Magical Cover Image -->
-<img src="cover-image.jpg" alt="Magical Planner Cover" class="cover-image">
+<section class="planner-section">
+    <h2>Planner Cover</h2>
+    <img src="planner-cover.png" alt="Weekly Planner Cover" class="planner-cover">
 
-<div class="planner-section">
-    <h1>✨ Whimsical Weekly Planner ✨</h1>
-    <p>
-        Dive into a world of dreams and stardust! This planner is your enchanted companion for setting magical goals, tracking your mystical adventures, and turning every week into a spellbinding journey. Perfect for dreamers, creators, and anyone who wants a little magic in their everyday.
-    </p>
-    <p>Price: <strong>$5</strong></p>
-    <a href="https://paypal.me/dailyblissplanners" target="_blank" class="buy-button">Buy Now 💖</a>
-</div>
+    <h2>Planner Preview</h2>
+    <div class="planner-preview">
+        <!-- This is a partial week layout example -->
+        <p>Mon | Tues | Wed | Thurs | Fri</p>
+        <hr>
+        <p>Lines for writing here…</p>
+        <hr>
+        <p>More lines…</p>
+        <hr>
+        <p>Even more lines…</p>
+    </div>
 
-<footer>
-    &copy; 2025 Daily Bliss Planners. All Rights Reserved.
-</footer>
+    <div class="buy-now">
+        <a href="https://paypal.me/dailyblissplanners" target="_blank">Buy Now 💖 $5</a>
+    </div>
+</section>
 
 </body>
 </html>
