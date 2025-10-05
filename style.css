@@ -1,112 +1,215 @@
-/* General Page Styles */
-body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    background: #ffe6f0;
-    color: #4b0033;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Bliss Planners</title>
+<style>
+    body {
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        background-color: #fff8f5;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #ffb6c1;
+        padding: 20px;
+        text-align: center;
+        color: #4b0082;
+    }
+    header h1 { margin: 0; }
+    nav {
+        background-color: #fff0f5;
+        text-align: center;
+        padding: 10px 0;
+    }
+    nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #4b0082;
+        font-weight: bold;
+    }
+    main {
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+    .section {
+        margin-bottom: 40px;
+    }
+    .buy-btn {
+        display: inline-block;
+        padding: 10px 25px;
+        background-color: #ff69b4;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
 
-header {
-    padding: 40px 20px 20px 20px;
-}
+    /* Planner Page Styles */
+    .planner {
+        display: none;
+        max-width: 800px;
+        margin: auto;
+    }
+    .day {
+        border: 1px dashed #ff69b4;
+        border-radius: 10px;
+        padding: 8px;
+        margin-bottom: 5px;
+        background-color: #fff0f5;
+        display: inline-block;
+        width: 48%;
+        vertical-align: top;
+        box-sizing: border-box;
+    }
+    .day h2 {
+        font-size: 14px;
+        color: #1e90ff;
+        margin: 2px 0;
+    }
+    .goals, .notes {
+        margin-top: 4px;
+        font-size: 12px;
+    }
+    ul {
+        list-style-type: square;
+        padding-left: 15px;
+        margin: 2px 0;
+    }
+    .mood {
+        font-style: italic;
+        font-size: 12px;
+        color: #ff4500;
+    }
+    .weekly-reflection {
+        border: 2px solid #8b008b;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #f8f0ff;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    button.print-btn {
+        display: block;
+        margin: 10px auto;
+        padding: 8px 15px;
+        font-size: 14px;
+        background-color: #ff69b4;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .paywall {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .paywall a {
+        padding: 10px 20px;
+        background: #ff69b4;
+        color: white;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+    }
+    @media print {
+        body { background: white; color: black; }
+        .day { width: 48%; }
+        button.print-btn, .paywall, nav, header { display: none; }
+    }
+</style>
+</head>
+<body>
 
-header h1 {
-    font-size: 3rem;
-    color: #ff66b3;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 5px #ffc0dd;
-}
+<header>
+    <h1>Daily Bliss Planners</h1>
+</header>
 
-header p {
-    font-size: 1.2rem;
-    color: #b30059;
-}
+<nav>
+    <a href="#home">Home</a>
+    <a href="#planner">Planner</a>
+</nav>
 
-/* 3D Planner Preview */
-.planner-preview {
-    width: 90%;
-    max-width: 500px;
-    margin: 0 auto 30px auto;
-    perspective: 1000px;
-    position: relative; /* for sparkles */
-}
+<main>
 
-.planner-preview img {
-    width: 100%;
-    border-radius: 25px;
-    box-shadow: 0 20px 40px rgba(255, 102, 179, 0.4);
-    transform: rotateY(-10deg) rotateX(5deg);
-    transition: transform 0.5s, box-shadow 0.5s;
-}
+    <section class="section" id="home">
+        <h2>Welcome to Daily Bliss Planners</h2>
+        <p>✨ Set your goals, track your progress, and add a splash of color to every day! Perfect for dreamers and planners alike.</p>
+        <div class="paywall">
+            <p><strong>Price: $5</strong></p>
+            <p>Purchase your planner to unlock full access!</p>
+            <a href="https://www.paypal.com/paypalme/dailyblissplanners" target="_blank">Buy Now</a>
+        </div>
+    </section>
 
-.planner-preview img:hover {
-    transform: rotateY(0deg) rotateX(0deg);
-    box-shadow: 0 25px 50px rgba(255, 102, 179, 0.6);
-}
+    <section class="section" id="planner">
+        <h2>🌈 Whimsical Weekly Planner</h2>
+        <p><strong>Price: $5</strong></p>
+        <div class="planner" id="plannerContent">
 
-/* PayPal QR Code Section */
-.buy-now-qr {
-    text-align: center;
-    margin-bottom: 50px;
-}
+            <div class="day"><h2>Monday</h2>
+                <div class="goals"><strong>Top 3 goals:</strong><ul><li>________________</li><li>________________</li><li>________________</li></ul></div>
+                <div class="mood">Mood: [ ] [ ] [ ] [ ] [ ]</div>
+                <div class="notes"><strong>Notes:</strong> __________________</div>
+            </div>
+            <div class="day"><h2>Tuesday</h2>
+                <div class="goals"><strong>Top 3 goals:</strong><ul><li>________________</li><li>________________</li><li>________________</li></ul></div>
+                <div class="mood">Mood: [ ] [ ] [ ] [ ] [ ]</div>
+                <div class="notes"><strong>Notes:</strong> __________________</div>
+            </div>
+            <div class="day"><h2>Wednesday</h2>
+                <div class="goals"><strong>Top 3 goals:</strong><ul><li>________________</li><li>________________</li><li>________________</li></ul></div>
+                <div class="mood">Mood: [ ] [ ] [ ] [ ] [ ]</div>
+                <div class="notes"><strong>Notes:</strong> __________________</div>
+            </div>
+            <div class="day"><h2>Thursday</h2>
+                <div class="goals"><strong>Top 3 goals:</strong><ul><li>________________</li><li>________________</li><li>________________</li></ul></div>
+                <div class="mood">Mood: [ ] [ ] [ ] [ ] [ ]</div>
+                <div class="notes"><strong>Notes:</strong> __________________</div>
+            </div>
+            <div class="day"><h2>Friday</h2>
+                <div class="goals"><strong>Top 3 goals:</strong><ul><li>________________</li><li>________________</li><li>________________</li></ul></div>
+                <div class="mood">Mood: [ ] [ ] [ ] [ ] [ ]</div>
+                <div class="notes"><strong>Notes:</strong> __________________</div>
+            </div>
+            <div class="day"><h2>Saturday</h2>
+                <div class="goals"><strong>Top 3 goals:</strong><ul><li>________________</li><li>________________</li><li>________________</li></ul></div>
+                <div class="mood">Mood: [ ] [ ] [ ] [ ] [ ]</div>
+                <div class="notes"><strong>Notes:</strong> __________________</div>
+            </div>
+            <div class="day"><h2>Sunday</h2>
+                <div class="goals"><strong>Top 3 goals:</strong><ul><li>________________</li><li>________________</li><li>________________</li></ul></div>
+                <div class="mood">Mood: [ ] [ ] [ ] [ ] [ ]</div>
+                <div class="notes"><strong>Notes:</strong> __________________</div>
+            </div>
 
-.buy-now-qr p {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #ff1a8c;
-}
+            <div class="weekly-reflection">
+                <h2>Weekly Reflection</h2>
+                <p>Best moments this week: __________________</p>
+                <p>Challenges I overcame: __________________</p>
+                <p>Dreams / Goals for next week: _______________</p>
+            </div>
 
-.buy-now-qr img {
-    width: 180px;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(255, 102, 179, 0.4);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+            <button class="print-btn" onclick="window.print()">Print Planner</button>
+        </div>
+    </section>
 
-.buy-now-qr img:hover {
-    transform: scale(1.08) rotate(-2deg);
-    box-shadow: 0 6px 15px rgba(255, 102, 179, 0.6);
-}
+</main>
 
-/* Footer */
-footer {
-    background-color: #ffb3d9;
-    color: #4b0033;
-    padding: 20px;
-    font-size: 0.9rem;
-    box-shadow: 0 -4px 10px rgba(255, 102, 179, 0.3);
-}
+<script>
+    // Show planner if redirected after purchase
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('purchased') === 'true') {
+        document.getElementById('plannerContent').style.display = 'block';
+        document.querySelector('.paywall').style.display = 'none';
+    }
+</script>
 
-/* Sparkles */
-.sparkle {
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    background: #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #fff, 0 0 15px #ff99cc;
-    animation: sparkleAnim 2s infinite;
-}
+</body>
+</html>
 
-.sparkle1 { top: 10%; left: 20%; animation-delay: 0s; }
-.sparkle2 { top: 30%; left: 70%; animation-delay: 0.5s; }
-.sparkle3 { top: 60%; left: 40%; animation-delay: 1s; }
-.sparkle4 { top: 80%; left: 25%; animation-delay: 1.5s; }
-.sparkle5 { top: 50%; left: 85%; animation-delay: 2s; }
-
-@keyframes sparkleAnim {
-    0% { transform: scale(0.5); opacity: 0.3; }
-    50% { transform: scale(1.5); opacity: 1; }
-    100% { transform: scale(0.5); opacity: 0.3; }
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-    header h1 { font-size: 2.2rem; }
-    .planner-preview img { border-radius: 15px; }
-    .buy-now-qr img { width: 140px; }
-}
