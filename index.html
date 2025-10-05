@@ -1,251 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap');
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  background: #fff0f5;
-  margin: 0;
-  padding: 2rem;
-  color: #333;
-}
-
-.planner {
-  max-width: 800px;
-  margin: 2rem auto;
-  background: linear-gradient(to bottom right, #ffe4e1, #fff0f5, #f0fff0);
-  border-radius: 20px;
-  padding: 2rem;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-.planner h1 {
-  font-family: 'Pacifico', cursive;
-  color: #ff69b4;
-  text-align: center;
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-}
-
-.planner h2 {
-  color: #ff69b4;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.5rem;
-}
-
-.section {
-  background: rgba(255,255,255,0.7);
-  border-radius: 15px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-.goal-list {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.goal-list li {
-  background: #fff5f8;
-  margin-bottom: 0.5rem;
-  padding: 0.8rem;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: 500;
-  color: black;
-}
-
-.goal-list li input[type="checkbox"] {
-  margin-right: 1rem;
-  transform: scale(1.2);
-}
-
-.notes textarea {
-  width: 100%;
-  border-radius: 10px;
-  padding: 0.8rem;
-  border: 2px solid #ffb6c1;
-  resize: vertical;
-  font-size: 1rem;
-  height: 150px;
-}
-</style>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily Bliss Planners</title>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
-<style>
-    /* Reset */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Bliss Planners</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+    }
     body {
-        font-family: 'Montserrat', sans-serif;
-        background: linear-gradient(to bottom, #fff0f5, #f0fff0);
-        color: #333;
-        line-height: 1.6;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      color: #333;
     }
-
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    /* Header */
     header {
-        background: #ffb6c1;
-        padding: 2rem;
-        text-align: center;
-        color: white;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 50px 20px 30px;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-bottom: 2px solid #f8b500;
     }
-
     header h1 {
-        font-family: 'Pacifico', cursive;
-        font-size: 3rem;
-        margin-bottom: 0.5rem;
-        text-shadow: 2px 2px #ffe4e1;
+      font-size: 3em;
+      color: #6a1b9a;
+      margin-bottom: 10px;
     }
-
-    header p { font-size: 1.2rem; }
-
-    .container {
-        max-width: 1000px;
-        margin: 2rem auto;
-        padding: 0 1rem;
+    header p {
+      font-size: 1.2em;
+      color: #333;
     }
-
-    .product-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 2rem;
+    /* Main Section */
+    .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 20px;
     }
-
-    @media(min-width: 768px){
-        .product-grid { grid-template-columns: repeat(2, 1fr); }
+    .planner-preview {
+      width: 90%;
+      max-width: 500px;
+      margin-bottom: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      overflow: hidden;
     }
-
-    @media(min-width: 1200px){
-        .product-grid { grid-template-columns: repeat(3, 1fr); }
+    .planner-preview img {
+      width: 100%;
+      display: block;
     }
-
-    .product {
-        background: #fff5f8;
-        border-radius: 20px;
-        box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-        overflow: hidden;
-        transition: transform 0.3s, box-shadow 0.3s;
-        position: relative;
+    .description {
+      text-align: center;
+      max-width: 600px;
+      margin-bottom: 30px;
     }
-
-    .product:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    .description h2 {
+      font-size: 2em;
+      color: #6a1b9a;
+      margin-bottom: 10px;
     }
-
-    .product img {
-        width: 100%;
-        display: block;
-        border-bottom: 5px solid #ffe4e1;
+    .description p {
+      font-size: 1.1em;
+      line-height: 1.6;
     }
-
-    .product-content {
-        padding: 1.5rem;
-        position: relative;
-        z-index: 2;
+    /* Buy Button */
+    .buy-btn {
+      background-color: #6a1b9a;
+      color: white;
+      font-size: 1.2em;
+      padding: 15px 40px;
+      border-radius: 50px;
+      transition: 0.3s;
     }
-
-    .product-content h2 {
-        font-size: 1.8rem;
-        margin-bottom: 0.5rem;
-        color: #ff69b4;
+    .buy-btn:hover {
+      background-color: #9c27b0;
+      transform: scale(1.05);
     }
-
-    .product-content p { margin-bottom: 1rem; }
-
-    .btn-buy {
-        display: inline-block;
-        padding: 0.7rem 1.5rem;
-        background: #ff69b4;
-        color: white;
-        border-radius: 50px;
-        text-decoration: none;
-        font-weight: bold;
-        box-shadow: 0 4px 10px rgba(255,105,180,0.3);
-        transition: background 0.3s, transform 0.3s;
-    }
-
-    .btn-buy:hover {
-        background: #ff85c1;
-        transform: scale(1.05);
-    }
-
+    /* Footer */
     footer {
-        text-align: center;
-        padding: 2rem;
-        background: #ffb6c1;
-        color: white;
-        font-weight: bold;
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-top: 2px solid #f8b500;
+      margin-top: 50px;
     }
-</style>
+  </style>
 </head>
 <body>
 
-<header>
+  <!-- Header -->
+  <header>
     <h1>Daily Bliss Planners</h1>
-    <p>Organize your day, your way 🌸</p>
-</header>
+    <p>Organize your life, achieve your goals, and add a splash of color to every day!</p>
+  </header>
 
-<div class="container">
-    <div class="product-grid">
-        <div class="product">
-            <img src="https://via.placeholder.com/400x300/ffb6c1/fff?text=Planner+1" alt="Floral Daily Planner">
-            <div class="product-content">
-                <h2>Floral Daily Planner</h2>
-                <p>Keep your schedule bright and organized with this beautiful floral planner.</p>
-                <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-        </div>
-
-        <div class="product">
-            <img src="https://via.placeholder.com/400x300/ff69b4/fff?text=Planner+2" alt="Minimalist Weekly Planner">
-            <div class="product-content">
-                <h2>Minimalist Weekly Planner</h2>
-                <p>Focus on what matters with this clean, simple weekly layout.</p>
-                <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-        </div>
-
-        <div class="product">
-            <img src=<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><div class="planner">
-    <h1><div class="planner">
-    <h1><div class="planner">
-    <h1>🎨 Colorful Goal Planner</h1>
-    <p>✨ Set your goals, track your progress, and add a splash of color to every day! Perfect for dreamers and planners alike.</p>
-
-    <div class="section">
-        <h2>Today's Goals</h2>
-        <ul class="goal-list">
-            <li><input type="checkbox"> _______________________________</li>
-            <li><input type="checkbox"> _______________________________</li>
-            <li><input type="checkbox"> _______________________________</li>
-        </ul>
+  <!-- Main Content -->
+  <section class="main">
+    <div class="planner-preview">
+      <img src="https://via.placeholder.com/500x600.png?text=Planner+Preview" alt="Planner Preview">
     </div>
-
-    <div class="section notes">
-        <h2>Notes</h2>
-        <textarea placeholder=""></textarea>
+    <div class="description">
+      <h2>Plan Your Day with Joy!</h2>
+      <p>Our Daily Bliss Planner is designed to help you track your goals, manage your time, and stay motivated. With colorful layouts and inspiring prompts, every day becomes a step toward your dreams.</p>
     </div>
-</div>
+    <a class="buy-btn" href="YOUR_PAYPAL_LINK_HERE" target="_blank">Buy Now</a>
+  </section>
 
-<footer>
-    &copy; 2025 Daily Bliss Planners. All rights reserved.
-</footer>
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Daily Bliss Planners. All Rights Reserved.
+  </footer>
 
 </body>
 </html>
+
