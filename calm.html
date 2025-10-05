@@ -44,7 +44,16 @@ nav a{margin-left:0.6rem;color:#6b5a86;text-decoration:none;}
   </ul>
 
   <p style="margin-top:1rem;font-weight:700;color:#4e3b8c">Price: $5</p>
-  <a class="buy" href="thankyou-calm.html">Buy Now 💖</a>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  <input type="hidden" name="cmd" value="_xclick">
+  <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL">
+  <input type="hidden" name="item_name" value="Whimsical Weekly Planner">
+  <input type="hidden" name="amount" value="5.00">
+  <input type="hidden" name="currency_code" value="USD">
+  <input type="hidden" name="return" value="https://cer27awesome-art.github.io/daily-bliss-planners/thankyou-whimsical.html">
+  <input type="submit" value="Buy Now 💖" class="buy">
+</form>
+
 </section>
 
 <aside>
