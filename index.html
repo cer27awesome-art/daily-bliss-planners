@@ -1,58 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Daily Bliss Planners — Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Bliss Planners</title>
 <style>
-  :root{--bg1:#f7f3ff;--bg2:#efe6ff;--accent:#6d4acb;--muted:#6b5a86}
-  *{box-sizing:border-box} body{margin:0;font-family:Georgia,serif;background:linear-gradient(135deg,var(--bg1),var(--bg2));color:#3b2c5a}
-  header{padding:1rem;background:rgba(220,210,255,0.35);box-shadow:0 2px 8px rgba(0,0,0,0.06)}
-  .container{max-width:980px;margin:0 auto;padding:1.25rem}
-  .brand{display:flex;align-items:center;justify-content:space-between;gap:1rem}
-  .brand h1{margin:0;color:var(--accent)}
-  nav a{margin-left:0.75rem;text-decoration:none;color:var(--muted);font-weight:600}
-  .hero{display:grid;grid-template-columns:1fr 360px;gap:1rem;align-items:center;margin-top:1rem}
-  .hero h2{margin:0;color:var(--accent)}
-  .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
-  .card{background:#fff;border-radius:12px;padding:1rem;box-shadow:0 6px 18px rgba(0,0,0,0.06);text-align:left}
-  .cta{display:inline-block;margin-top:0.85rem;background:linear-gradient(135deg,#b499ff,#9578f0);color:white;padding:0.6rem 1rem;border-radius:20px;text-decoration:none;font-weight:700}
-  footer{margin-top:2rem;padding:1rem;background:rgba(217,207,255,0.6);text-align:center;color:#4e3b8c}
-  @media(max-width:760px){.hero{grid-template-columns:1fr}}
+body { margin:0; font-family: Georgia, serif; background: linear-gradient(135deg,#f7f3ff,#efe6ff); color:#3b2c5a; }
+header { background: rgba(220,210,255,0.35); padding:1rem; display:flex; justify-content:space-between; align-items:center; box-shadow:0 2px 8px rgba(0,0,0,0.06);}
+nav a { margin-left:0.8rem; text-decoration:none; color:#6b5a86; font-weight:600;}
+.container { max-width:980px; margin:0 auto; padding:1.25rem;}
+.hero { display:grid; grid-template-columns:1fr 360px; gap:1rem; align-items:center; margin-top:1rem;}
+.hero h2 { margin:0; color:#6d4acb;}
+.card-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; margin-top:1rem;}
+.card { background:#fff; border-radius:12px; padding:1rem; box-shadow:0 6px 18px rgba(0,0,0,0.06); text-align:left;}
+.cta { display:inline-block; margin-top:0.85rem; background:linear-gradient(135deg,#b499ff,#9578f0); color:white; padding:0.6rem 1rem; border-radius:20px; text-decoration:none; font-weight:700;}
+footer { margin-top:2rem; padding:1rem; background: rgba(217,207,255,0.6); text-align:center; color:#4e3b8c;}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header>
-  <div class="container brand">
-    <div>
-      <h1>✨ Daily Bliss Planners</h1>
-      <div style="font-size:0.9rem;color:var(--muted)">Minimal • Magical • Mindful</div>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="whimsical.html">Whimsical Weekly</a>
-      <a href="focus.html">Focus Flow</a>
-      <a href="mindset.html">Magical Mindset</a>
-      <a href="calm.html">Daily Calm</a>
-    </nav>
+  <div>
+    <h1>✨ Daily Bliss Planners</h1>
+    <div style="font-size:0.9rem;color:#6b5a86;">Minimal • Magical • Mindful</div>
   </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="whimsical.html">Whimsical Weekly</a>
+    <a href="focus.html">Focus Flow</a>
+    <a href="mindset.html">Magical Mindset</a>
+    <a href="calm.html">Daily Calm</a>
+  </nav>
 </header>
 
-<main class="container">
+<div class="container">
   <section class="hero">
     <div>
       <h2>Organize your week — gently, beautifully.</h2>
-      <p>Daily Bliss Planners are thoughtfully designed to help you set intentions, track progress, and add a little enchantment to everyday planning. Digital PDFs: printable, downloadable, and crafted for calm focus.</p>
+      <p>Daily Bliss Planners help you set intentions, track progress, and add a little magic to your everyday planning. Digital PDFs: printable, downloadable, and crafted for calm focus.</p>
       <p style="margin-top:1rem;font-weight:700;color:#4e3b8c">Each planner: $5 — instant download after purchase.</p>
       <p style="margin-top:1rem"><a class="cta" href="whimsical.html">Shop Planners →</a></p>
     </div>
     <aside style="background:#fff;border-radius:14px;padding:1rem;box-shadow:0 8px 30px rgba(0,0,0,0.12)">
-      <img src="whimsical-cover.png" alt="Whimsical cover" style="width:100%;border-radius:10px">
+      <img src="whimsical-cover.png" alt="Whimsical Weekly cover" style="width:100%;border-radius:10px">
     </aside>
   </section>
 
   <section style="margin-top:1.6rem">
-    <h2 style="color:var(--accent)">Featured Planners</h2>
+    <h2 style="color:#6d4acb">Featured Planners</h2>
     <div class="card-grid">
       <a class="card" href="whimsical.html"><h3>Whimsical Weekly Planner</h3><p>Track your goals with charm ✨</p><div style="font-weight:700">$5</div></a>
       <a class="card" href="focus.html"><h3>Focus Flow Planner</h3><p>Minimal and elegant for daily structure 🌿</p><div style="font-weight:700">$5</div></a>
@@ -60,328 +55,8 @@
       <a class="card" href="calm.html"><h3>Daily Calm Planner</h3><p>Soft routines for intentional days</p><div style="font-weight:700">$5</div></a>
     </div>
   </section>
-</main>
+</div>
 
 <footer>© 2025 Daily Bliss Planners — Organized with a little magic ✨</footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Whimsical Weekly Planner — Daily Bliss</title>
-<style>
- body{font-family:Georgia,serif;margin:0;background:linear-gradient(135deg,#f7f3ff,#efe6ff);color:#3b2c5a}
- .wrap{max-width:920px;margin:0 auto;padding:1.25rem}
- header{padding:1rem 0;display:flex;justify-content:space-between;align-items:center}
- nav a{margin-left:0.6rem;color:#6b5a86;text-decoration:none}
- .main{display:grid;grid-template-columns:1fr 360px;gap:1rem;align-items:start}
- .cover{border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.08);overflow:hidden}
- .buy{display:inline-block;margin-top:1rem;background:linear-gradient(135deg,#b499ff,#9578f0);color:#fff;padding:0.7rem 1.1rem;border-radius:20px;text-decoration:none;font-weight:700}
- @media(max-width:760px){.main{grid-template-columns:1fr}}
-</style>
-</head>
-<body>
-<div class="wrap">
-  <header>
-    <div>
-      <h1 style="margin:0;color:#6d4acb">Whimsical Weekly Planner</h1>
-      <div style="color:#5a4a86">Track your goals with charm ✨</div>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="whimsical.html">This Planner</a>
-      <a href="focus.html">Focus Flow</a>
-      <a href="mindset.html">Magical Mindset</a>
-      <a href="calm.html">Daily Calm</a>
-    </nav>
-  </header>
-
-  <main class="main">
-    <section>
-      <h2 style="color:#6d4acb;margin-top:0">About this planner</h2>
-      <p style="color:#4a3a6f">A weekly layout with space for priorities, a small habit tracker, and a little motivational prompt each week. Clean lines and gentle magical accents.</p>
-
-      <h3 style="margin-top:1.1rem">What’s included</h3>
-      <ul style="color:#5a4a86">
-        <li>Printable weekly spreads (PDF)</li>
-        <li>Habit tracker & weekly reflection</li>
-        <li>Minimal decorative elements</li>
-      </ul>
-
-      <p style="margin-top:1rem;font-weight:700;color:#4e3b8c">Price: $5</p>
-      <a class="buy" href="https://paypal.me/dailyblissplanners?amount=5&note=Whimsical%20Weekly%20Planner" target="_blank">Buy Now 💖</a>
-    </section>
-
-    <aside>
-      <div class="cover">
-        <img src="whimsical-cover.png" alt="Whimsical Weekly cover">
-      </div>
-    </aside>
-  </main>
-  <footer style="margin-top:2rem;padding-top:1rem;border-top:1px solid rgba(0,0,0,0.04);color:#4e3b8c">© 2025 Daily Bliss Planners</footer>
-</div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Focus Flow Planner — Daily Bliss</title>
-<style>
- body{font-family:Georgia,serif;margin:0;background:linear-gradient(135deg,#f7f3ff,#efe6ff);color:#3b2c5a}
- .wrap{max-width:920px;margin:0 auto;padding:1.25rem}
- header{padding:1rem 0;display:flex;justify-content:space-between;align-items:center}
- nav a{margin-left:0.6rem;color:#6b5a86;text-decoration:none}
- .main{display:grid;grid-template-columns:1fr 360px;gap:1rem;align-items:start}
- .cover{border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.08);overflow:hidden}
- .buy{display:inline-block;margin-top:1rem;background:linear-gradient(135deg,#4ec5a5,#2ca37a);color:#fff;padding:0.7rem 1.1rem;border-radius:20px;text-decoration:none;font-weight:700}
- @media(max-width:760px){.main{grid-template-columns:1fr}}
-</style>
-</head>
-<body>
-<div class="wrap">
-  <header>
-    <div>
-      <h1 style="margin:0;color:#2ca37a">Focus Flow Planner</h1>
-      <div style="color:#5a4a86">Minimal and elegant for daily structure 🌿</div>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="whimsical.html">Whimsical Weekly</a>
-      <a href="focus.html">This Planner</a>
-      <a href="mindset.html">Magical Mindset</a>
-      <a href="calm.html">Daily Calm</a>
-    </nav>
-  </header>
-
-  <main class="main">
-    <section>
-      <h2 style="color:#2ca37a;margin-top:0">About this planner</h2>
-      <p style="color:#4a3a6f">A clean weekly layout to help focus on priorities, manage tasks, and track your goals with minimal distractions. Perfect for structured, mindful planning.</p>
-
-      <h3 style="margin-top:1.1rem">What’s included</h3>
-      <ul style="color:#5a4a86">
-        <li>Printable weekly spreads (PDF)</li>
-        <li>Task-focused weekly structure</li>
-        <li>Minimal and elegant design</li>
-      </ul>
-
-      <p style="margin-top:1rem;font-weight:700;color:#4e3b8c">Price: $5</p>
-      <a class="buy" href="https://paypal.me/dailyblissplanners?amount=5&note=Focus%20Flow%20Planner" target="_blank">Buy Now 💖</a>
-    </section>
-
-    <aside>
-      <div class="cover">
-        <img src="focus-cover.png" alt="Focus Flow cover">
-      </div>
-    </aside>
-  </main>
-  <footer style="margin-top:2rem;padding-top:1rem;border-top:1px solid rgba(0,0,0,0.04);color:#4e3b8c">© 2025 Daily Bliss Planners</footer>
-</div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Magical Mindset Journal — Daily Bliss</title>
-<style>
- body{font-family:Georgia,serif;margin:0;background:linear-gradient(135deg,#f7f3ff,#efe6ff);color:#3b2c5a}
- .wrap{max-width:920px;margin:0 auto;padding:1.25rem}
- header{padding:1rem 0;display:flex;justify-content:space-between;align-items:center}
- nav a{margin-left:0.6rem;color:#6b5a86;text-decoration:none}
- .main{display:grid;grid-template-columns:1fr 360px;gap:1rem;align-items:start}
- .cover{border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.08);overflow:hidden}
- .buy{display:inline-block;margin-top:1rem;background:linear-gradient(135deg,#b899d6,#9578f0);color:#fff;padding:0.7rem 1.1rem;border-radius:20px;text-decoration:none;font-weight:700}
- @media(max-width:760px){.main{grid-template-columns:1fr}}
-</style>
-</head>
-<body>
-<div class="wrap">
-  <header>
-    <div>
-      <h1 style="margin:0;color:#9578f0">Magical Mindset Journal</h1>
-      <div style="color:#5a4a86">For affirmations and reflection 💭</div>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="whimsical.html">Whimsical Weekly</a>
-      <a href="focus.html">Focus Flow</a>
-      <a href="mindset.html">This Planner</a>
-      <a href="calm.html">Daily Calm</a>
-    </nav>
-  </header>
-
-  <main class="main">
-    <section>
-      <h2 style="color:#9578f0;margin-top:0">About this planner</h2>
-      <p style="color:#4a3a6f">Designed to guide your thoughts, affirmations, and reflections. Weekly layouts encourage self-awareness and growth with gentle magical details.</p>
-
-      <h3 style="margin-top:1.1rem">What’s included</h3>
-      <ul style="color:#5a4a86">
-        <li>Printable weekly spreads (PDF)</li>
-        <li>Affirmation & reflection prompts</li>
-        <li>Magical minimal decoration</li>
-      </ul>
-
-      <p style="margin-top:1rem;font-weight:700;color:#4e3b8c">Price: $5</p>
-      <a class="buy" href="https://paypal.me/dailyblissplanners?amount=5&note=Magical%20Mindset%20Journal" target="_blank">Buy Now 💖</a>
-    </section>
-
-    <aside>
-      <div class="cover">
-        <img src="mindset-cover.png" alt="Magical Mindset cover">
-      </div>
-    </aside>
-  </main>
-  <footer style="margin-top:2rem;padding-top:1rem;border-top:1px solid rgba(0,0,0,0.04);color:#4e3b8c">© 2025 Daily Bliss Planners</footer>
-</div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Daily Calm Planner — Daily Bliss</title>
-<style>
- body{font-family:Georgia,serif;margin:0;background:linear-gradient(135deg,#f7f3ff,#efe6ff);color:#3b2c5a}
- .wrap{max-width:920px;margin:0 auto;padding:1.25rem}
- header{padding:1rem 0;display:flex;justify-content:space-between;align-items:center}
- nav a{margin-left:0.6rem;color:#6b5a86;text-decoration:none}
- .main{display:grid;grid-template-columns:1fr 360px;gap:1rem;align-items:start}
- .cover{border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.08);overflow:hidden}
- .buy{display:inline-block;margin-top:1rem;background:linear-gradient(135deg,#8fc1d6,#5a9bb2);color:#fff;padding:0.7rem 1.1rem;border-radius:20px;text-decoration:none;font-weight:700}
- @media(max-width:760px){.main{grid-template-columns:1fr}}
-</style>
-</head>
-<body>
-<div class="wrap">
-  <header>
-    <div>
-      <h1 style="margin:0;color:#5a9bb2">Daily Calm Planner</h1>
-      <div style="color:#5a4a86">Soft routines for intentional days</div>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="whimsical.html">Whimsical Weekly</a>
-      <a href="focus.html">Focus Flow</a>
-      <a href="mindset.html">Magical Mindset</a>
-      <a href="calm.html">This Planner</a>
-    </nav>
-  </header>
-
-  <main class="main">
-    <section>
-      <h2 style="color:#5a9bb2;margin-top:0">About this planner</h2>
-      <p style="color:#4a3a6f">A gentle weekly planner focused on calm routines, self-care, and mindful productivity. Perfect for anyone looking for a peaceful, structured week.</p>
-
-      <h3 style="margin-top:1.1rem">What’s included</h3>
-      <ul style="color:#5a4a86">
-        <li>Printable weekly spreads (PDF)</li>
-        <li>Simple self-care prompts</li>
-        <li>Soft minimal decoration</li>
-      </ul>
-
-      <p style="margin-top:1rem;font-weight:700;color:#4e3b8c">Price: $5</p>
-      <a class="buy" href="https://paypal.me/dailyblissplanners?amount=5&note=Daily%20Calm%20Planner" target="_blank">Buy Now 💖</a>
-    </section>
-
-    <aside>
-      <div class="cover">
-        <img src="calm-cover.png" alt="Daily Calm cover">
-      </div>
-    </aside>
-  </main>
-  <footer style="margin-top:2rem;padding-top:1rem;border-top:1px solid rgba(0,0,0,0.04);color:#4e3b8c">© 2025 Daily Bliss Planners</footer>
-</div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Thank you — Whimsical Weekly</title>
-<style>
-body{font-family:Georgia,serif;margin:0;background:linear-gradient(135deg,#f7f3ff,#efe6ff);color:#3b2c5a}
-.wrap{max-width:760px;margin:40px auto;padding:1rem;text-align:center}
-.btn{display:inline-block;background:linear-gradient(135deg,#b499ff,#9578f0);color:#fff;padding:0.6rem 1rem;border-radius:18px;text-decoration:none;font-weight:700}
-</style>
-</head>
-<body>
-<div class="wrap">
-  <h1>Thanks for your purchase! 💖</h1>
-  <p>If you just completed payment via PayPal, click below to download your PDF.</p>
-  <p><a class="btn" href="whimsical.pdf" download>Download Whimsical Weekly Planner (PDF)</a></p>
-  <p style="margin-top:1rem;color:#6b5a86">If the download doesn’t start, check your PayPal receipt and return here, or contact us via your PayPal profile.</p>
-</div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Thank you — Focus Flow</title>
-<style>
-body{font-family:Georgia,serif;margin:0;background:linear-gradient(135deg,#f7f3ff,#efe6ff);color:#3b2c5a}
-.wrap{max-width:760px;margin:40px auto;padding:1rem;text-align:center}
-.btn{display:inline-block;background:linear-gradient(135deg,#4ec5a5,#2ca37a);color:#fff;padding:0.6rem 1rem;border-radius:18px;text-decoration:none;font-weight:700}
-</style>
-</head>
-<body>
-<div class="wrap">
-  <h1>Thanks for your purchase! 💖</h1>
-  <p>Click below to download your PDF.</p>
-  <p><a class="btn" href="focus.pdf" download>Download Focus Flow Planner (PDF)</a></p>
-  <p style="margin-top:1rem;color:#6b5a86">If the download doesn’t start, check your PayPal receipt and return here, or contact us via your PayPal profile.</p>
-</div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Thank you — Magical Mindset</title>
-<style>
-body{font-family:Georgia,serif;margin:0;background:linear-gradient(135deg,#f7f3ff,#efe6ff);color:#3b2c5a}
-.wrap{max-width:760px;margin:40px auto;padding:1rem;text-align:center}
-.btn{display:inline-block;background:linear-gradient(135deg,#b899d6,#9578f0);color:#fff;padding:0.6rem 1rem;border-radius:18px;text-decoration:none;font-weight:700}
-</style>
-</head>
-<body>
-<div class="wrap">
-  <h1>Thanks for your purchase! 💖</h1>
-  <p>Click below to download your PDF.</p>
-  <p><a class="btn" href="mindset.pdf" download>Download Magical Mindset Journal (PDF)</a></p>
-  <p style="margin-top:1rem;color:#6b5a86">If the download doesn’t start, check your PayPal receipt and return here, or contact us via your PayPal profile.</p>
-</div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Thank you — Daily Calm</title>
-<style>
-body{font-family:Georgia,serif;margin:0;background:linear-gradient(135deg,#f7f3ff,#efe6ff);color:#3b2c5a}
-.wrap{max-width:760px;margin:40px auto;padding:1rem;text-align:center}
-.btn{display:inline-block;background:linear-gradient(135deg,#8fc1d6,#5a9bb2);color:#fff;padding:0.6rem 1rem;border-radius:18px;text-decoration:none;font-weight:700}
-</style>
-</head>
-<body>
-<div class="wrap">
-  <h1>Thanks for your purchase! 💖</h1>
-  <p>Click below to download your PDF.</p>
-  <p><a class="btn" href="calm.pdf" download>Download Daily Calm Planner (PDF)</a></p>
-  <p style="margin-top:1rem;color:#6b5a86">If the download doesn’t start, check your PayPal receipt and return here, or contact us via your PayPal profile.</p>
-</div>
 </body>
 </html>
