@@ -1,47 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Bliss Planners</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Bliss Planners</title>
+<style>
+    body {
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        background-color: #fff8f5;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #ffb6c1;
+        padding: 20px;
+        text-align: center;
+        color: #4b0082;
+    }
+    header h1 { margin: 0; }
+    nav {
+        background-color: #fff0f5;
+        text-align: center;
+        padding: 10px 0;
+    }
+    nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #4b0082;
+        font-weight: bold;
+    }
+    main {
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+    .section {
+        margin-bottom: 40px;
+    }
+    .buy-btn {
+        display: inline-block;
+        padding: 10px 25px;
+        background-color: #ff69b4;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    /* Planner Page Styles */
+    .planner {
+        display: none;
+        max-width: 800px;
+        margin: auto;
+    }
+    .day {
+        border: 1px dashed #ff69b4;
+        border-radius: 10px;
+        padding: 8px;
+        margin-bottom: 5px;
+        background-color: #fff0f5;
+        display: inline-block;
+        width: 48%;
+        vertical-align: top;
+        box-sizing: border-box;
+    }
+    .day h2 {
+        font-size: 14px;
+        color: #1e90ff;
+        margin: 2px 0;
+    }
+    .goals, .notes {
+        margin-top: 4px;
+        font-size: 12px;
+    }
+    ul {
+        list-style-type: square;
+        padding-left: 15px;
+        margin: 2px 0;
+    }
+    .mood {
+        font-style: italic;
+        font-size: 12px;
+        color: #ff4500;
+    }
+    .weekly-reflection {
+        border: 2px solid #8b008b;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #f8f0ff;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    button.print-btn {
+        display: block;
+        margin: 10px auto;
+        padding: 8px 15px;
+        font-size: 14px;
+        background-color: #ff69b4;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .paywall {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .paywall a {
+        padding: 10px 20px;
+        background: #ff69b4;
+        color: white;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+    }
+    @media print {
+        body { background: white; color: black; }
+        .day { width: 48%; }
+        button.print-btn, .paywall, nav, header { display: none; }
+    }
+</style>
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>✨ Daily Bliss Planners ✨</h1>
-        <p>Whimsical planners to brighten your days and organize your dreams!</p>
-    </header>
+<header>
+    <h1>Daily Bliss Planners</h1>
+</header>
 
-    <!-- Planner Section -->
-    <div class="planner-section">
-        <!-- 3D Planner Preview with sparkles -->
-        <div class="planner-preview">
-            <img src="planner-cover.png" alt="Minimalist Planner Cover">
+<nav>
+    <a href="#home">Home</a>
+    <a href="#planner">Planner</a>
+</nav>
 
-            <!-- Sparkles -->
-            <div class="sparkle sparkle1"></div>
-            <div class="sparkle sparkle2"></div>
-            <div class="sparkle sparkle3"></div>
-            <div class="sparkle sparkle4"></div>
-            <div class="sparkle sparkle5"></div>
+<main>
+
+    <section class="section" id="home">
+        <h2>Welcome to Daily Bliss Planners</h2>
+        <p>✨ Set your goals, track your progress, and add a splash of color to every day! Perfect for dreamers and planners alike.</p>
+        <div class="paywall">
+            <p><strong>Price: $5</strong></p>
+            <p>Purchase your planner to unlock full access!</p>
+            <a href="https://www.paypal.com/paypalme/dailyblissplanners" target="_blank">Buy Now</a>
         </div>
+    </section>
 
-        <!-- PayPal QR Code -->
-        <div class="buy-now-qr">
-            <p>Click or scan to buy 💖</p>
-            <a href="https://paypal.me/dailyblissplanners" target="_blank">
-                <img src="qrcode.png" alt="PayPal QR Code">
-            </a>
+    <section class="section" id="planner">
+        <h2>🌈 Whimsical Weekly Planner</h2>
+        <p><strong>Price: $5</strong></p>
+        <div class="planner" id="plannerContent">
+
+            <div class="day"><h2>Monday</h2>
+                <div class="goals"><strong>Top 3 goals:</strong><ul><li>________________</li><li>________________</li><li>________________</li></ul></div>
+                <div class="mood">Mood: [ ] [ ] [ ] [ ] [ ]</div>
+                <div class="notes"><strong>Notes:</strong> __________________</div>
+            </div>
+            <div class="day"><h2>Tuesday</h2>
+                <div class="goals"><strong>Top 3 goals:</strong><ul><li>________________</li><li>________________</li><li>________________</li></ul></div>
+                <div class="mood">Mood: [ ] [ ] [ ] [ ] [ ]</div>
+                <div class="notes"><strong>Notes:</strong> __________________</div>
+            </div>
+            <div class="day"><h2>Wednesday</h2>
+                <div class="goals"><strong>Top 3 goals:</strong><ul><li>________________</li><li>________________</li><li>________________</li></ul></div>
+                <div class="mood">Mood: [ ] [ ] [ ] [ ] [ ]</div>
+                <div class="notes"><strong>Notes:</strong> __________________</div>
+            </div>
+            <div class="day"><h2>Thursday</h2>
+                <div class="goals"><strong>Top 3 goals:</strong><ul><li>________________</li><li>________________</li><li>________________</li></ul></div>
+                <div class="mood">Mood: [ ] [ ] [ ] [ ] [ ]</div>
+                <div class="notes"><strong>Notes:</strong> __________________</div>
+            </div>
+            <div class="day"><h2>Friday</h2>
+                <div class="goals"><strong>Top 3 goals:</strong><ul><li>________________</li><li>________________</li><li>________________</li></ul></div>
+                <div class="mood">Mood: [ ] [ ] [ ] [ ] [ ]</div>
+                <div class="notes"><strong>Notes:</strong> __________________</div>
+            </div>
+            <div class="day"><h2>Saturday</h2>
+                <div class="goals"><strong>Top 3 goals:</strong><ul><li>________________</li><li>________________</li><li>________________</li></ul></div>
+                <div class="mood">Mood: [ ] [ ] [ ] [ ] [ ]</div>
+                <div class="notes"><strong>Notes:</strong> __________________</div>
+            </div>
+            <div class="day"><h2>Sunday</h2>
+                <div class="goals"><strong>Top 3 goals:</strong><ul><li>________________</li><li>________________</li><li>________________</li></ul></div>
+                <div class="mood">Mood: [ ] [ ] [ ] [ ] [ ]</div>
+                <div class="notes"><strong>Notes:</strong> __________________</div>
+            </div>
+
+            <div class="weekly-reflection">
+                <h2>Weekly Reflection</h2>
+                <p>Best moments this week: __________________</p>
+                <p>Challenges I overcame: __________________</p>
+                <p>Dreams / Goals for next week: _______________</p>
+            </div>
+
+            <button class="print-btn" onclick="window.print()">Print Planner</button>
         </div>
-    </div>
+    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Daily Bliss Planners | Follow your dreams, one page at a time 💕</p>
-    </footer>
+</main>
+
+<script>
+    // Show planner if redirected after purchase
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('purchased') === 'true') {
+        document.getElementById('plannerContent').style.display = 'block';
+        document.querySelector('.paywall').style.display = 'none';
+    }
+</script>
 
 </body>
 </html>
-
