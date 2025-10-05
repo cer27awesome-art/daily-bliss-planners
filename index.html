@@ -1,165 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daily Bliss Planners</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    /* Global Styles */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Quicksand', sans-serif;
-    }
-    body {
-      background: linear-gradient(to right, #fceabb, #f8b500);
-      color: #333;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    /* Header */
-    header {
-      text-align: center;
-      padding: 50px 20px 30px;
-      background-color: rgba(255, 255, 255, 0.6);
-      border-bottom: 2px solid #f8b500;
-    }
-    header h1 {
-      font-size: 3em;
-      color: #6a1b9a;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2em;
-      color: #333;
-    }
-    /* Main Section */
-    .main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 50px 20px;
-    }
-    .planner-preview {
-      width: 90%;
-      max-width: 500px;
-      margin-bottom: 30px;
-      border-radius: 20px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-      overflow: hidden;
-    }
-    .planner-preview img {
-      width: 100%;
-      display: block;
-    }
-    .description {
-      text-align: center;
-      max-width: 600px;
-      margin-bottom: 30px;
-    }
-    .description h2 {
-      font-size: 2em;
-      color: #6a1b9a;
-      margin-bottom: 10px;
-    }
-    .description p {
-      font-size: 1.1em;
-      line-height: 1.6;
-    }
-    /* Buy Button */
-    .buy-btn {
-      background-color: #6a1b9a;
-      color: white;
-      font-size: 1.2em;
-      padding: 15px 40px;
-      border-radius: 50px;
-      transition: 0.3s;
-    }
-    .buy-btn:hover {
-      background-color: #9c27b0;
-      transform: scale(1.05);
-    }
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.6);
-      border-top: 2px solid #f8b500;
-      margin-top: 50px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Bliss Planners</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>Daily Bliss Planners</h1>
-    <p>Organize your life, achieve your goals, and add a splash of color to every day!</p>
-  </header>
+    <!-- Header -->
+    <header>
+        <h1>✨ Daily Bliss Planners ✨</h1>
+        <p>Whimsical planners to brighten your days and organize your dreams!</p>
+    </header>
 
-  <!-- Main Content -->
-  <section class="main">
-    <<style>
-/* 3D Planner Preview */
-.planner-preview {
-  width: 90%;
-  max-width: 500px;
-  margin-bottom: 30px;
-  perspective: 1000px; /* gives depth */
-}
+    <!-- Planner Section -->
+    <div class="planner-section">
+        <!-- 3D Planner Preview -->
+        <div class="planner-preview">
+            <img src="images/planner-cover.png" alt="Minimalist Planner Cover">
+        </div>
 
-.planner-preview img {
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-  transform: rotateY(-10deg) rotateX(5deg);
-  transition: transform 0.5s, box-shadow 0.5s;
-}
-
-/* Hover effect */
-.planner-preview img:hover {
-  transform: rotateY(0deg) rotateX(0deg);
-  box-shadow: 0 25px 50px rgba(0,0,0,0.4);
-}
-</style>
-
-    <div class="description">
-      <h2>Plan Your Day with Joy!</h2>
-      <p>Our Daily Bliss Planner is designed to help you track your goals, manage your time, and stay motivated. With colorful layouts and inspiring prompts, every day becomes a step toward your dreams.</p>
+        <!-- PayPal QR Code -->
+        <div class="buy-now-qr">
+            <p>Scan to Buy 💖</p>
+            <img src="images/paypal-qr.png" alt="PayPal QR Code">
+        </div>
     </div>
-    <a class="buy-btn" href=".buy-now-qr {
-  text-align: center;
-  margin-bottom: 50px;
-}
 
-.buy-now-qr p {
-  font-weight: bold;
-  margin-bottom: 10px;
-  font-family: sans-serif;
-}
-
-<div class="planner-section">
-    <div class="planner-preview">
-        <img src="planner-cover.png" alt="Minimalist Planner Cover">
-    </div>
-    <div class="buy-now-qr">
-        <p>Scan to Buy:</p>
-        <img src="paypal-qr.png" alt="PayPal QR Code">
-    </div>
-</div>
-
-" target="_blank">Buy Now</a>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 Daily Bliss Planners. All Rights Reserved.
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Daily Bliss Planners | Follow your dreams, one page at a time 💕</p>
+    </footer>
 
 </body>
 </html>
-
