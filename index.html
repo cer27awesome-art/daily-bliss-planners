@@ -1,62 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily Bliss Planners</title>
-<style>
-body { margin:0; font-family: Georgia, serif; background: linear-gradient(135deg,#f7f3ff,#efe6ff); color:#3b2c5a; }
-header { background: rgba(220,210,255,0.35); padding:1rem; display:flex; justify-content:space-between; align-items:center; box-shadow:0 2px 8px rgba(0,0,0,0.06);}
-nav a { margin-left:0.8rem; text-decoration:none; color:#6b5a86; font-weight:600;}
-.container { max-width:980px; margin:0 auto; padding:1.25rem;}
-.hero { display:grid; grid-template-columns:1fr 360px; gap:1rem; align-items:center; margin-top:1rem;}
-.hero h2 { margin:0; color:#6d4acb;}
-.card-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; margin-top:1rem;}
-.card { background:#fff; border-radius:12px; padding:1rem; box-shadow:0 6px 18px rgba(0,0,0,0.06); text-align:left;}
-.cta { display:inline-block; margin-top:0.85rem; background:linear-gradient(135deg,#b499ff,#9578f0); color:white; padding:0.6rem 1rem; border-radius:20px; text-decoration:none; font-weight:700;}
-footer { margin-top:2rem; padding:1rem; background: rgba(217,207,255,0.6); text-align:center; color:#4e3b8c;}
-@media(max-width:760px){.hero{grid-template-columns:1fr}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Bliss Planners</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff0f5;
+            color: #4b0082;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: linear-gradient(90deg, #ffb6c1, #dda0dd);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        nav a {
+            margin: 0 1rem;
+            color: #4b0082;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .planner {
+            background-color: #fffaf0;
+            border-radius: 15px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .planner h2 {
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+        .planner img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .buy-now {
+            display: block;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .buy-now a {
+            background-color: #ff69b4;
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .buy-now a:hover {
+            background-color: #ff1493;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: #4b0082;
+        }
+    </style>
 </head>
 <body>
+
 <header>
-  <div>
-    <h1>✨ Daily Bliss Planners</h1>
-    <div style="font-size:0.9rem;color:#6b5a86;">Minimal • Magical • Mindful</div>
-  </div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="whimsical.html">Whimsical Weekly</a>
-    <a href="focus.html">Focus Flow</a>
-    <a href="mindset.html">Magical Mindset</a>
-    <a href="calm.html">Daily Calm</a>
-  </nav>
+    <h1>🌟 Daily Bliss Planners 🌟</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="whimsical.html">Whimsical Weekly</a>
+        <a href="colorful.html">Colorful Goal</a>
+        <a href="minimalist.html">Minimalist Monthly</a>
+        <a href="dailybliss.html">Daily Bliss</a>
+    </nav>
 </header>
 
-<div class="container">
-  <section class="hero">
-    <div>
-      <h2>Organize your week — gently, beautifully.</h2>
-      <p>Daily Bliss Planners help you set intentions, track progress, and add a little magic to your everyday planning. Digital PDFs: printable, downloadable, and crafted for calm focus.</p>
-      <p style="margin-top:1rem;font-weight:700;color:#4e3b8c">Each planner: $5 — instant download after purchase.</p>
-      <p style="margin-top:1rem"><a class="cta" href="whimsical.html">Shop Planners →</a></p>
+<main>
+    <div class="planner">
+        <h2>Whimsical Weekly Planner</h2>
+        <img src="planner1.png" alt="Whimsical Weekly Planner Preview">
+        <p>Plan your week with joy and color! Perfect for staying organized and inspired.</p>
+        <div class="buy-now">
+            <a href="https://www.paypal.com/paypalme/dailyblissplanners" target="_blank">Buy Now 💖</a>
+        </div>
     </div>
-    <aside style="background:#fff;border-radius:14px;padding:1rem;box-shadow:0 8px 30px rgba(0,0,0,0.12)">
-      <img src="whimsical-cover.png" alt="Whimsical Weekly cover" style="width:100%;border-radius:10px">
-    </aside>
-  </section>
 
-  <section style="margin-top:1.6rem">
-    <h2 style="color:#6d4acb">Featured Planners</h2>
-    <div class="card-grid">
-      <a class="card" href="whimsical.html"><h3>Whimsical Weekly Planner</h3><p>Track your goals with charm ✨</p><div style="font-weight:700">$5</div></a>
-      <a class="card" href="focus.html"><h3>Focus Flow Planner</h3><p>Minimal and elegant for daily structure 🌿</p><div style="font-weight:700">$5</div></a>
-      <a class="card" href="mindset.html"><h3>Magical Mindset Journal</h3><p>For affirmations and reflection 💭</p><div style="font-weight:700">$5</div></a>
-      <a class="card" href="calm.html"><h3>Daily Calm Planner</h3><p>Soft routines for intentional days</p><div style="font-weight:700">$5</div></a>
+    <div class="planner">
+        <h2>Colorful Goal Planner</h2>
+        <img src="planner2.png" alt="Colorful Goal Planner Preview">
+        <p>Track your goals, progress, and dreams in a vibrant, fun layout.</p>
+        <div class="buy-now">
+            <a href="https://www.paypal.com/paypalme/dailyblissplanners" target="_blank">Buy Now 💖</a>
+        </div>
     </div>
-  </section>
-</div>
 
-<footer>© 2025 Daily Bliss Planners — Organized with a little magic ✨</footer>
+    <div class="planner">
+        <h2>Minimalist Monthly Planner</h2>
+        <img src="planner3.png" alt="Minimalist Monthly Planner Preview">
+        <p>Keep it simple with a clean layout for your monthly plans.</p>
+        <div class="buy-now">
+            <a href="https://www.paypal.com/paypalme/dailyblissplanners" target="_blank">Buy Now 💖</a>
+        </div>
+    </div>
+
+    <div class="planner">
+        <h2>Daily Bliss Planner</h2>
+        <img src="planner4.png" alt="Daily Bliss Planner Preview">
+        <p>Stay on top of your daily tasks while adding a touch of magic to every day.</p>
+        <div class="buy-now">
+            <a href="https://www.paypal.com/paypalme/dailyblissplanners" target="_blank">Buy Now 💖</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    🌟 Daily Bliss Planners 🌟
+</footer>
+
 </body>
 </html>
